@@ -1,5 +1,9 @@
 # wdd130_Fara-wayland_Collection
 # Client: Benjamin Wayland
+Github: benwayland-cell
 # Lead Developer: Austin Brackney
-# Junior Developer A: Brandy Alfaro
-# Junior Developer B: Jacen Haws
+Github: GoldBracken
+# Junior Developer A: Aaron Yorke
+Github: AaronYorke314
+# Junior Developer B: Jake Powell
+Github: jake16powell-glitch
