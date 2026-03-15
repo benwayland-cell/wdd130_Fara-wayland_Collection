@@ -1,4 +1,5 @@
 # wdd130_Fara-wayland_Collection
+url: https://benwayland-cell.github.io/wdd130_Fara-wayland_Collection/
 # Client: Benjamin Wayland
 Github: benwayland-cell
 # Lead Developer: Austin Brackney
