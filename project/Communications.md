@@ -7,3 +7,9 @@ email: bra25005@byui.edu
 email: yorkeaaron872@gmail.com
 # Junior Developer B: Jake Powell
 email: jake.16.powell@gmail.com
+
+# Communications log
+3/18/2026
+- Asked client about wireframe images.
+Client clarified use of banners from youtube for channels in sub-directories.
+Use stock image of library for home page.
