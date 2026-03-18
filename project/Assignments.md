@@ -1,7 +1,9 @@
 # Assignments (Until Changed)
 # Lead Developer: Austin Brackney
-home.html
+home.html and fun.html
 # Junior Developer A: Aaron Yorke
-comedy.html and animation.html
+comedy.html 
 # Junior Developer B: Jake Powell
-educational and fun.html
+educational.html
+# Junior Developer C: Royal Goodsell
+animation.html
