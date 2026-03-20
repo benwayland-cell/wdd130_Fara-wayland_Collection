@@ -8,3 +8,5 @@ Github: GoldBracken
 Github: AaronYorke314
 # Junior Developer B: Jake Powell
 Github: jake16powell-glitch
+# Junior Developer C: Royal Goodsell
+Github: Greeny299

@@ -7,4 +7,6 @@
 - Build CSS for subpages. They should all use the same basic CSS.
 # Junior Developer B: Jake Powell
 - Test the pages, make sure nothing breaks.
-- Coordinate with Aaron with CSS, make sure code is semantic.
+- Coordinate with Aaron with CSS for assigned page, make sure code is semantic.
+# Junior Developer C: Royal Goodsell
+- Coordinate with Aaron with CSS for assigned page.
