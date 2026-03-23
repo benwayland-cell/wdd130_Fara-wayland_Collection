@@ -1,11 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animations</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animation | Fara-Wayland Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=BPMF+Huninn&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary:  #02111B;
+      --secondary: #FCFCFC;
+      --accent1:  #30292F;
+      --accent2:  #5D737E;
+    }
+
+    body {
+      background-color: var(--primary);
+      color: var(--secondary);
+      font-family: 'BPMF Huninn', Georgia, serif;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1, h2, h3, nav a, .btn {
+      font-family: 'Bagel Fat One', Impact, cursive;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background-color: var(--accent1);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo-link {
+      text-decoration: none;
+      color: var(--secondary);
+    }
+
+    .logo-name {
+      font-family: 'Bagel Fat One', Impact, cursive;
+      font-size: 1.5rem;
+      line-height: 1.1;
+      letter-spacing: 0.03em;
+    }
+
+    .logo-tagline {
+      font-family: 'BPMF Huninn', Georgia, serif;
+      font-size: 0.72rem;
+      color: var(--accent2);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.2rem;
+    }
+
+    nav a {
+      color: var(--secondary);
+      text-decoration: none;
+      padding: 0.35rem 0.9rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      letter-spacing: 0.04em;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    nav a:hover {
+      background-color: var(--accent2);
+    }
+
+    nav a.active {
+      background-color: var(--accent2);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(150deg, var(--accent1) 0%, var(--primary) 65%);
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      border-bottom: 4px solid var(--accent2);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      color: var(--accent2);
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      opacity: 0.88;
+    }
+
+    /* ── CHANNEL CARDS ── */
+    .channels {
+      max-width: 1100px;
+      width: 100%;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 2rem;
+    }
+
+    .channel-card {
+      background-color: var(--accent1);
+      border-radius: 10px;
+      padding: 1.6rem;
+      border-left: 5px solid var(--accent2);
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .channel-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+    }
+
+    .channel-card h2 {
+      font-size: 1.45rem;
+      color: var(--accent2);
+      letter-spacing: 0.03em;
+    }
+
+    .channel-card p {
+      font-size: 0.97rem;
+      opacity: 0.9;
+      flex: 1;
+    }
+
+    .card-links {
+      display: flex;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+      margin-top: 0.4rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.38rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      letter-spacing: 0.03em;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    .btn-primary {
+      background-color: var(--accent2);
+      color: var(--secondary);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--secondary);
+      color: var(--primary);
+    }
+
+    .btn-outline {
+      border: 2px solid var(--accent2);
+      color: var(--accent2);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--accent2);
+      color: var(--secondary);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background-color: var(--accent1);
+      color: var(--secondary);
+      text-align: center;
+      padding: 2rem;
+      margin-top: auto;
+      border-top: 4px solid var(--accent2);
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      opacity: 0.7;
+      margin-bottom: 0.25rem;
+    }
+
+    footer a {
+      color: var(--accent2);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero {
+        padding: 3.5rem 1.25rem 3rem;
+      }
+
+      .channels {
+        grid-template-columns: 1fr;
+        padding: 0 1.25rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    
+
+  <header>
+    <a class="logo-link" href="index.html">
+      <p class="logo-name">Fara-Wayland Collection</p>
+      <p class="logo-tagline">Human-Curated Picks</p>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="comedy.html">Comedy</a>
+      <a href="animation.html" class="active">Animation</a>
+      <a href="educational.html">Educational</a>
+      <a href="fun.html">Fun</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Animation</h1>
+      <p>
+        This is where there are really talented artists. They're just putting what they do up online for free.
+        These include story-time animators, including some really small channels. There's also some
+        telling a story and making a world in their art.
+      </p>
+    </section>
+
+    <section class="channels" aria-label="Animation channels">
+
+      <!-- Ice Cream Sandwich -->
+      <article class="channel-card">
+        <h2>Ice Cream Sandwich</h2>
+        <p>
+          Ice Cream Sandwich is a story-time animator, but he also will sometimes ask silly questions of his audience —
+          such as "Which video game item would you chose to: 1) survive a zombie apocalypse 2) use for every day things
+          3) annex Toronto" — and then animates his thoughts on people's responses.
+        </p>
+        <div class="card-links">
+          <a class="btn btn-primary" href="https://www.youtube.com/@IceCreamSandwich/videos"
+             target="_blank" rel="noopener noreferrer">Channel</a>
+          <a class="btn btn-outline" href="https://www.youtube.com/@IceCreamSandwich/videos"
+             target="_blank" rel="noopener noreferrer">Recommended Video</a>
+        </div>
+      </article>
+
+      <!-- Vritziestar -->
+      <article class="channel-card">
+        <h2>Vritziestar</h2>
+        <p>
+          Vritziestar is a very small story-time animation channel that only really started not too long ago.
+          She is an amazing artist who loves cute things and drawing cute things.
+          A good one of hers is her video on her thoughts on bugs.
+        </p>
+        <div class="card-links">
+          <a class="btn btn-primary" href="https://www.youtube.com/@vritziestar"
+             target="_blank" rel="noopener noreferrer">Channel</a>
+          <a class="btn btn-outline" href="https://www.youtube.com/@vritziestar"
+             target="_blank" rel="noopener noreferrer">Recommended: Thoughts on Bugs</a>
+        </div>
+      </article>
+
+      <!-- Coopymations -->
+      <article class="channel-card">
+        <h2>Coopymations</h2>
+        <p>
+          Coopymations is another recent story-time animator that only started 5 months ago! He is a bit more
+          chill of an animator. A good one of his is a video where he discusses a bad experience on his first job.
+        </p>
+        <div class="card-links">
+          <a class="btn btn-primary" href="https://www.youtube.com/@Coopymations"
+             target="_blank" rel="noopener noreferrer">Channel</a>
+          <a class="btn btn-outline" href="https://www.youtube.com/@Coopymations"
+             target="_blank" rel="noopener noreferrer">Recommended: First Job</a>
+        </div>
+      </article>
+
+      <!-- Luke Humphris -->
+      <article class="channel-card">
+        <h2>Luke Humphris</h2>
+        <p>
+          In Luke Humphris's animations he shows these fascinating worlds of his own creation. Many of the worlds
+          and themes he explores are on the darker side — life after society collapsed, liminal spaces, and cosmic
+          horror — but they always have a hopeful edge to them. There's always someone being hopeful even in
+          inevitable death and always people rebuilding after society collapsed. His Inter-C-Zone series is an
+          amazing trek through several fascinating liminal spaces.
+        </p>
+        <div class="card-links">
+          <a class="btn btn-primary" href="https://www.youtube.com/@lukehumphris"
+             target="_blank" rel="noopener noreferrer">Channel</a>
+          <a class="btn btn-outline" href="https://www.youtube.com/@lukehumphris"
+             target="_blank" rel="noopener noreferrer">Recommended: Inter-C-Zone</a>
+        </div>
+      </article>
+
+      <!-- Its ok koy -->
+      <article class="channel-card">
+        <h2>Its ok koy</h2>
+        <p>
+          Its ok koy animates over songs — often more serious ones — while managing to tell a unique story between
+          the lines. For example, in a cover of Aimee Carty's <em>2 Days into College</em>, the song briefly mentions
+          how the protagonist didn't want to date a boy named Colin because he didn't play guitar. Throughout the
+          animation we watch Colin learning to play. There are several cute touches like this sprinkled throughout
+          his videos.
+        </p>
+        <div class="card-links">
+          <a class="btn btn-primary" href="https://www.youtube.com/@itsokkoy"
+             target="_blank" rel="noopener noreferrer">Channel</a>
+          <a class="btn btn-outline" href="https://www.youtube.com/@itsokkoy"
+             target="_blank" rel="noopener noreferrer">Recommended: 2 Days into College</a>
+        </div>
+      </article>
+
+      <!-- Jim EdLee -->
+      <article class="channel-card">
+        <h2>Jim EdLee</h2>
+        <p>
+          Jim EdLee animates horizontal shorts that just barely miss being short-form content. He is best known for
+          his <em>You Can't Run Forever</em> series, starring a silent protagonist and an insane blue guy searching
+          for a hospital through a haunted, cryptid-filled forest — though it's often just that the blue guy owes
+          someone money. Road Trip is a great entry point to the series.
+        </p>
+        <div class="card-links">
+          <a class="btn btn-primary" href="https://www.youtube.com/@Jim_EdLee"
+             target="_blank" rel="noopener noreferrer">Channel</a>
+          <a class="btn btn-outline" href="https://www.youtube.com/@Jim_EdLee"
+             target="_blank" rel="noopener noreferrer">Recommended: Road Trip</a>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Fara-Wayland Collection &mdash; A human-curated catalog of things worth watching.</p>
+    <p>&copy; 2026 Ben Wayland &nbsp;|&nbsp; WDD 130</p>
+  </footer>
+
 </body>
 </html>
