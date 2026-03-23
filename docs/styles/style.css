@@ -15,6 +15,14 @@ Sources:
     --para-font: "Bpmf Huninn";
 }
 
+a {
+    font-style: var(--heading-font);
+}
+
+p {
+    font-style: var(--para-font);
+}
+
 #home-nav {
     display: grid;
     grid-template-columns: 200px repeat(6, 1fr);
@@ -28,7 +36,6 @@ Sources:
     text-align: center;
     align-self: center;
     padding: 15px;
-    font-style: var(--heading-font);
     color: var(--primary-color);
     background-color: var(--accent-2);
     text-decoration: none;
@@ -58,7 +65,6 @@ Sources:
 }
 
 #pages section a {
-    font-style: var(--heading-font);
     text-decoration: none;
     font-size: larger;
     border: solid 2px var(--accent-1);
@@ -66,12 +72,7 @@ Sources:
 }
 
 #pages section p {
-    font-style: var(--para-font);
     text-align: center;
-}
-
-#footer-p {
-    font-style: var(--para-font);
 }
 
 a:hover { 
