@@ -1,0 +1,18 @@
+/*
+Client: Cam Smith
+Lead Developer: Aaron Yorke
+Junior Developer: William Garcia
+Junior Developer: Holden Lederer
+*/
+
+#ed-child {
+    display: flex;
+    text-align: center;
+    justify-self: center;
+}
+
+.ed-desctiption {
+    display: flex;
+    text-align: center;
+    justify-self: center;
+}
