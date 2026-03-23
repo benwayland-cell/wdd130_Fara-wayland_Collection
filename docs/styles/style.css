@@ -20,6 +20,10 @@ Sources:
     grid-template-columns: 200px repeat(6, 1fr);
 }
 
+#blank {
+    background-color: white;
+}
+
 #home-nav a {
     text-align: center;
     align-self: center;
