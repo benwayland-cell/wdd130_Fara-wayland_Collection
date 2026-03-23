@@ -5,14 +5,38 @@ Junior Developer: William Garcia
 Junior Developer: Holden Lederer
 */
 
-#ed-child {
-    display: flex;
+#ed-title {
     text-align: center;
-    justify-self: center;
 }
 
 .ed-desctiption {
-    display: flex;
     text-align: center;
+}
+
+.banner-img {
+    width:90%;
+    display: flex;
+    justify-content: center;
     justify-self: center;
+}
+
+.subject {
+    background-color: grey;
+    border: 3px solid black;
+    justify-content: center;
+    margin: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+h2 {
+    text-align:center;
+}
+
+footer {
+    color: grey;
+}
+
+p {
+    color: black;
 }
