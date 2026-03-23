@@ -17,11 +17,7 @@ Sources:
 
 #home-nav {
     display: grid;
-    grid-template-columns: 200px repeat(5, 1fr);
-}
-
-#home-nav .logo{
-    margin-right: 100px;
+    grid-template-columns: 200px repeat(6, 1fr);
 }
 
 #home-nav a {
@@ -43,18 +39,26 @@ Sources:
     max-width: 2000px;
 }
 
+#pages {
+    display: grid;
+    row-gap: 25px;
+}
+
 #pages section {
     justify-items: center;
     display: grid;
     grid-template-rows: .7fr 1fr;
-    border: var(--accent-1);
+    border: solid 2px var(--accent-1);
+    padding: 10px 20px 20px;
+    row-gap: 10px;
 }
 
 #pages section a {
     font-style: var(--heading-font);
     text-decoration: none;
     font-size: larger;
-    border: var(--accent-1);
+    border: solid 2px var(--accent-1);
+    padding: 5px 20px;
 }
 
 #pages section p {
@@ -64,4 +68,8 @@ Sources:
 
 #footer-p {
     font-style: var(--para-font);
+}
+
+a:hover { 
+    opacity: 70%;
 }
