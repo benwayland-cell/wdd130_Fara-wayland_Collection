@@ -53,6 +53,7 @@ p {
 #pages {
     display: grid;
     row-gap: 25px;
+    background-color: var(--accent-2);
 }
 
 #pages section {
@@ -73,6 +74,12 @@ p {
 
 #pages section p {
     text-align: center;
+}
+
+footer {
+    margin-top: 10px;
+    border: solid 2px var(--accent-1);
+    background-color: var(--accent-2);
 }
 
 a:hover { 
