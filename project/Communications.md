@@ -10,13 +10,13 @@ email: jake.16.powell@gmail.com
 # Junior Developer C: Royal Goodsell
 
 # Communications log
-3/18/2026
+## 3/18/2026
 - Asked client about wireframe images.
 - Client clarified use of banners from youtube for channels in sub-directories.
-- Use stock image of library for home page.
-3/21/2026
+- Use stock image of library for home page.<br>
+## 3/21/2026
 - Checked to see if new Junior Dev was able to access the project.
-- Client confirmed that he just added Royal (JD C) to the project.
-3/25/2026
+- Client confirmed that he just added Royal (JD C) to the project.<br>
+## 3/25/2026
 - Asked client about CSS layout and how closely the pages should resemble the site plan.
-- Client clarified that we should use colors in site plan, but we have creative liberty as well regarding the pages.
+- Client clarified that we should use colors in site plan, but we have creative liberty as well regarding the pages.<br>
