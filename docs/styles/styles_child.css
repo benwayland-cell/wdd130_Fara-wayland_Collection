@@ -9,6 +9,14 @@ Junior Developer: Holden Lederer
     text-align: center;
 }
 
+#bob {
+    width: 200px;
+}
+
+#navi {
+    border-right:2px solid black;
+}
+
 .ed-desctiption {
     text-align: center;
 }
@@ -25,8 +33,8 @@ Junior Developer: Holden Lederer
     border: 3px solid black;
     justify-content: center;
     margin: 5px;
-    width: 100%;
-    padding: 10px;
+    width: 95%;
+    margin: 2.5%;
 }
 
 h2 {
@@ -34,9 +42,27 @@ h2 {
 }
 
 footer {
-    color: grey;
+    background-color: grey;
+    border: 3px solid black;
+    margin: 4px;
 }
 
 p {
     color: black;
+    text-align: center;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#headerdiv {
+    display: grid;
+    text-align: center;
+    align-self: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: 2px solid black;
+    background-color: grey;
+    padding: 10px;
 }
