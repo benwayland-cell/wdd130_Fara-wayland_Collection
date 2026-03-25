@@ -60,7 +60,7 @@ header {
 #pages {
     display: grid;
     row-gap: 25px;
-    
+    margin: 40px;
 }
 
 #pages section {
