@@ -1,8 +1,7 @@
 # Roles (Until Changed)
 See [GitHub Issues](https://github.com/benwayland-cell/wdd130_Fara-wayland_Collection/issues)
 # Lead Developer: Austin Brackney
-See issue [#11](/../../issues/11)
-See issue [#7](/../../issues/7)
+See issue [#11](/../../issues/11) and issue [#7](/../../issues/7)
 - Make sure the server is working and pages load.
 - Create base CSS for web pages. They should all use the same basic CSS.
 # Junior Developer A: Aaron Yorke
