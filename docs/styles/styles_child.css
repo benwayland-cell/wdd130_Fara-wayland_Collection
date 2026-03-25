@@ -5,6 +5,15 @@ Junior Developer: William Garcia
 Junior Developer: Holden Lederer
 */
 
+:root {
+    --primary-color: #02111B;
+    --seconday-color: #FCFCFC;
+    --accent-1: #30292F;
+    --accent-2: #5D737E;
+    --heading-font: "Bagel Fat One";
+    --para-font: "Bpmf Huninn";
+}
+
 #ed-title {
     text-align: center;
 }
