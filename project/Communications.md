@@ -17,3 +17,6 @@ email: jake.16.powell@gmail.com
 3/21/2026
 - Checked to see if new Junior Dev was able to access the project.
 - Client confirmed that he just added Royal (JD C) to the project.
+3/25/2026
+- Asked client about CSS layout and how closely the pages should resemble the site plan.
+- Client clarified that we should use colors in site plan, but we have creative liberty as well regarding the pages.

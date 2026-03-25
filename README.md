@@ -10,3 +10,8 @@ Github: AaronYorke314
 Github: jake16powell-glitch
 # Junior Developer C: Royal Goodsell
 Github: Greeny299
+
+# Links to Pages
+- [Site Plan](./plan/wayland-site-plan-template.docx)
+- [Roles](./project/Roles.md)
+- [Assignments](./project/Assignments.md)
