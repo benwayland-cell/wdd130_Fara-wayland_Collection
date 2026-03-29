@@ -3,7 +3,7 @@ Team name: Fara-Wayland Collection
 Contributors: Ben Wayland, Austin Brackney, Aaron Yorke, Jake Powell, Royal Goodsell
 Date: 3/23/2026
 Sources:
-    [1]instructions, [2]course, [3]github, [4]other website
+    [1]instructions, [2]WDD 130, [3]github, [4]other website
 */
 
 :root {
@@ -16,11 +16,11 @@ Sources:
 }
 
 a {
-    font-style: var(--heading-font);
+    font-family: var(--heading-font);
 }
 
-p {
-    font-style: var(--para-font);
+p, h4 {
+    font-family: var(--para-font);
 }
 
 header {
