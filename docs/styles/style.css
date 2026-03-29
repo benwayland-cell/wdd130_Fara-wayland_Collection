@@ -7,10 +7,10 @@ Sources:
 */
 
 :root {
-    --primary-color: #02111B;
+    --primary-color: #02111b;
     --seconday-color: #FCFCFC;
     --accent-1: #30292F;
-    --accent-2: #5D737E;
+    --accent-2: gray;
     --heading-font: "Bagel Fat One";
     --para-font: "Bpmf Huninn";
 }
@@ -45,6 +45,9 @@ header {
     color: var(--primary-color);
     background-color: var(--accent-2);
     text-decoration: none;
+}
+
+.brder-right {
     border-right:2px solid black;
 }
 
