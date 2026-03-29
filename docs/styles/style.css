@@ -17,6 +17,7 @@ Sources:
 
 a {
     font-family: var(--heading-font);
+    color: var(--seconday-color);
 }
 
 p, h4 {
@@ -26,6 +27,7 @@ p, h4 {
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
 }
 
 #home-nav {
@@ -35,7 +37,7 @@ header {
     grid-template-columns: repeat(5, 1fr);
     border: 2px solid black;
     background-color: var(--accent-2);
-    padding: 10px;
+    padding: 5px;
 }
 
 #home-nav a {
