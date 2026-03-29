@@ -19,7 +19,7 @@ a {
     font-family: var(--heading-font);
 }
 
-p {
+p, h4 {
     font-family: var(--para-font);
 }
 
